@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tx_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_android"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tx_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/text_dahai"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"/> <!-- 设置组件与父容器的边距-->
+
+    <TextView
+        android:id="@+id/tx_3"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:text="下拉选择"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tx_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="平凡的世界"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tx_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="双眼失明丝毫不影响我追捕敌人，因为我能闻到他们身上的臭臭味"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginTop="10dp"
+        android:singleLine="false"/> <!--多行显示不下，单行显示后会显示...-->
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换AFragment"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_change_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="传递数据到Activity"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_change2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换文字标题"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is A Frament"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+</LinearLayout>
