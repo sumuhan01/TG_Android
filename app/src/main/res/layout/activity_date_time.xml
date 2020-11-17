@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestView.DateTimeActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btn_text_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextClock"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_dalog_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时钟对话框"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_chronnometer_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计数器"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</LinearLayout>

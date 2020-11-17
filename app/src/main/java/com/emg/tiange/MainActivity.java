@@ -11,6 +11,8 @@ import com.emg.tiange.BroadcastReceiver.BroadcastActivity1;
 import com.emg.tiange.GridView.GridViewActivity;
 import com.emg.tiange.HanlerView.HanlerViewActivity1;
 import com.emg.tiange.ListView.ListViewActivity;
+import com.emg.tiange.NetworkCom.NetworkActivity;
+import com.emg.tiange.TestView.DateTimeActivity;
 import com.emg.tiange.fragment.ContainerActivity;
 import com.emg.tiange.recyclerview.RecyclerViewActivity;
 
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 	private Button mBtnFragmentView;
 	private Button mBtnHandlerViwe;
 	private Button mBtnBroadcastView;
+	private Button mBtnNetworkView;
+	private Button mBtnTestView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
 		mBtnFragmentView = findViewById(R.id.btn_fragment_view);
 		mBtnHandlerViwe = findViewById(R.id.btn_Handle_view);
 		mBtnBroadcastView = findViewById(R.id.btn_Broadcast_view);
+		mBtnNetworkView = findViewById(R.id.btn_Network_view);
+		mBtnTestView = findViewById(R.id.btn_test_view);
 
 		//设置监听器
 		setListeners();
@@ -85,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
 		mBtnFragmentView.setOnClickListener(onClick);
 		mBtnHandlerViwe.setOnClickListener(onClick);
 		mBtnBroadcastView.setOnClickListener(onClick);
+		mBtnNetworkView.setOnClickListener(onClick);
+		mBtnTestView.setOnClickListener(onClick);
 	}
 
 	//实现接听器接口
@@ -162,6 +170,14 @@ public class MainActivity extends AppCompatActivity {
 
 				case R.id.btn_Broadcast_view:
 					intent = new Intent(MainActivity.this, BroadcastActivity1.class);
+					break;
+
+				case R.id.btn_Network_view:
+					intent = new Intent(MainActivity.this, NetworkActivity.class);
+					break;
+
+				case R.id.btn_test_view:
+					intent = new Intent(MainActivity.this, DateTimeActivity.class);
 					break;
 
 					default:

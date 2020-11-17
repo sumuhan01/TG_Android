@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadcastReceiver.BroadcastActivity2"></activity>
+        <activity android:name=".TestView.DalogClockActivity"></activity>
+        <activity android:name=".TestView.ChronometerActivity" />
+        <activity android:name=".TestView.TextClockActivtity" />
+        <activity android:name=".TestView.DateTimeActivity" />
+        <activity android:name=".NetworkCom.NetworkActivity" />
+        <activity android:name=".NetworkCom.HttpUrlConnectActivity" />
+        <activity android:name=".BroadcastReceiver.BroadcastActivity2" />
         <activity android:name=".BroadcastReceiver.BroadcastActivity1" />
         <activity android:name=".HanlerView.HanlerViewActivity1" />
         <activity android:name=".fragment.ContainerActivity" />
@@ -31,10 +37,12 @@
         <activity android:name=".EditTextActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".TextViewActive" />
-        <activity android:name=".RelativeLayoutActivity"
-            android:label="RelativeLayoutActivity"/>
-        <activity android:name=".LinearLayoutActivity"
-            android:label="LinearLayoutActivity"/>
+        <activity
+            android:name=".RelativeLayoutActivity"
+            android:label="RelativeLayoutActivity" />
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:label="LinearLayoutActivity" />
         <activity
             android:name=".MainActivity"
             android:launchMode="standard">
