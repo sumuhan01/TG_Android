@@ -10,156 +10,12 @@
         android:padding="10dp">
 
         <Button
-            android:id="@+id/btn_linearlayout"
+            android:id="@+id/btn_tiange_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LinearLayout"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_relativelayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RelativeLayout"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_editext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="EditText"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_image_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ImageView"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ScrollView"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:id="@+id/btn_ratiobutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:text="TianGeView"
             android:textAllCaps="false"
-            android:text="RatioButton"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_checkbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_list_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ListBox"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_grid_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_web_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="WebView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RecycleView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_dialog_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DialogView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_progress_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ProgressView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_fragment_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FragmentView"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_Handle_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="HanlerViwe"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_Broadcast_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BroadcastViwe"
-            android:textAllCaps="false"
-            android:textSize="18sp"/>
-
-        <Button
-            android:id="@+id/btn_Network_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NetworkComView"
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_test_view"
@@ -168,6 +24,14 @@
             android:text="TestView"
             android:textAllCaps="false"
             android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_mingri_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MingRiView"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
 
     </LinearLayout>>
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MingRi.PhoneActivity">
+
+    <ImageButton
+        android:id="@+id/btn_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/message"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="WeChatView"/>
+
+    <Button
+    android:id="@+id/btn_ret_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="返回桌面"/>
+
+    <Button
+        android:id="@+id/btn_debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调试信号监控"/>
+
+    <Button
+        android:id="@+id/btn_broad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广播消息"/>
+
+</LinearLayout>
