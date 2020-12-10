@@ -12,10 +12,13 @@ import androidx.fragment.app.Fragment;
 import com.emg.tiange.R;
 
 public class Find_Fragment extends Fragment {
+
+	public Find_Fragment(){}
+
 	@Nullable
 	@Override
 	public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-		View findView = inflater.inflate(R.layout.find_wechat,container,false);
+		View findView = inflater.inflate(R.layout.find_wechat,null);
 		return findView;
 	}
 }

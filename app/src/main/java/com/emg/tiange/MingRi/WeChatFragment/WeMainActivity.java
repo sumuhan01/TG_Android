@@ -22,15 +22,15 @@ public class WeMainActivity extends AppCompatActivity implements View.OnClickLis
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_we_main);
 
-//		mImgWeChat = findViewById(R.id.image_wechat);
-//		mImgFind = findViewById(R.id.image_find);
-//		mImgMe = findViewById(R.id.image_me);
-//		mImgMsg = findViewById(R.id.image_tongxun);
-//
-//		mImgWeChat.setOnClickListener(this);
-//		mImgFind.setOnClickListener(this);
-//		mImgMe.setOnClickListener(this);
-//		mImgMsg.setOnClickListener(this);
+		mImgWeChat = findViewById(R.id.image_wechat);
+		mImgFind = findViewById(R.id.image_find);
+		mImgMe = findViewById(R.id.image_me);
+		mImgMsg = findViewById(R.id.image_tongxun);
+
+		mImgWeChat.setOnClickListener(this);
+		mImgFind.setOnClickListener(this);
+		mImgMe.setOnClickListener(this);
+		mImgMsg.setOnClickListener(this);
 	}
 
 	@Override
@@ -48,9 +48,19 @@ public class WeMainActivity extends AppCompatActivity implements View.OnClickLis
 				fragment = new Find_Fragment();
 				break;
 
+			case R.id.image_me:
+				fragment = new me_Fragment();
+				break;
+
+			case R.id.image_tongxun:
+				fragment = new message_Fragment();
+				break;
+
 				default:break;
 		}
-		ft.replace(R.id.fragment,fragment);
-		ft.commit();
+		if (fragment != null) {
+			ft.replace(R.id.fragment,fragment);
+			ft.commit();
+		}
 	}
 }

@@ -24,8 +24,8 @@ public class SendActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setAction(".com.TianGe.MingRi.BroadCast.wangzhe");
-				startActivity(intent);
+				intent.setAction("wangzhe");
+				sendBroadcast(intent);
 			}
 		});
 
@@ -33,8 +33,8 @@ public class SendActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setAction(".com.TianGe.MingRi.BroadCast.LOL");
-				startActivity(intent);
+				intent.setAction("LOL");
+				sendBroadcast(intent);
 
 			}
 		});

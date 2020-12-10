@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -13,15 +17,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <receiver android:name=".MingRi.BroadCast.ReceiveActivity"
+        <activity android:name=".Message.MessagDisplayActivity"></activity>
+        <activity android:name=".Message.MessageActivity" />
+        <activity android:name=".HLink.Phone.ContactActivity" />
+
+        <service
+            android:name=".MingRi.Service.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MingRi.Service.BoundServiceActivity" />
+
+        <service
+            android:name=".MingRi.Service.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MingRi.Service.MusicServiceActivity" />
+
+        <service
+            android:name=".MingRi.Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MingRi.Service.MyActivity" />
+        <activity android:name=".MingRi.ThreadService.CarouselActivity" />
+        <activity android:name=".MingRi.ThreadService.ProgresHandleActivity" />
+        <activity android:name=".MingRi.ThreadService.ThreadActivity" />
+        <activity android:name=".MingRi.MediaVedio.MediaActivity" />
+
+        <receiver
+            android:name=".MingRi.BroadCast.ReceiveActivity"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name=".com.TianGe.MingRi.BroadCast.wangzhe"/>
-                <action android:name=".com.TianGe.MingRi.BroadCast.LOL"/>
-            </intent-filter>>
+                <action android:name="wangzhe" />
+                <action android:name="LOL" />
+            </intent-filter>
         </receiver>
-        <activity android:name=".MingRi.BroadCast.SendActivity"></activity>>
+
+        <activity android:name=".MingRi.BroadCast.SendActivity" />
         <activity android:name=".MingRi.DebugActivity" />
         <activity android:name=".MingRi.WeChatFragment.WeMainActivity" />
         <activity android:name=".MingRi.PhoneActivity" />

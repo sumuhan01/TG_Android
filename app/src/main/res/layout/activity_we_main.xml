@@ -10,7 +10,7 @@
         android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.emg.tiange.MingRi.WeChatFragment.WeMainActivity"/>
+        android:name="com.emg.tiange.MingRi.WeChatFragment.WeChat_Fragment"/>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -12,10 +12,11 @@ import androidx.fragment.app.Fragment;
 import com.emg.tiange.R;
 
 public class WeChat_Fragment extends Fragment {
+	public WeChat_Fragment(){}
 	@Nullable
 	@Override
 	public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-		View weChatView = inflater.inflate(R.layout.fragment_wechat,container,false);
+		View weChatView = inflater.inflate(R.layout.fragment_wechat,null);
 		return weChatView;
 	}
 }

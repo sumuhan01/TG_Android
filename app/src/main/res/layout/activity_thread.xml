@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".MingRi.ThreadService.ThreadActivity">
+
+    <Button
+        android:id="@+id/btn_thstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启线程" />
+
+    <Button
+        android:id="@+id/btn_thstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停线程" />
+
+    <TextView
+        android:id="@+id/tx_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:text="春暖花开，面朝大海"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_display_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改主线程UI显示"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -9,8 +9,10 @@ import android.widget.Button;
 
 import com.emg.tiange.BroadcastReceiver.BroadcastActivity1;
 import com.emg.tiange.GridView.GridViewActivity;
+import com.emg.tiange.HLink.Phone.ContactActivity;
 import com.emg.tiange.HanlerView.HanlerViewActivity1;
 import com.emg.tiange.ListView.ListViewActivity;
+import com.emg.tiange.Message.MessageActivity;
 import com.emg.tiange.MingRi.PhoneActivity;
 import com.emg.tiange.NetworkCom.NetworkActivity;
 import com.emg.tiange.TestView.DateTimeActivity;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 	private Button mBtnTestView;
 	private Button mBtnTianGeView;
 	private Button mBtnMingRiView;
+	private Button mBtnContact;
+	private Button mBtnMessage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 		mBtnTestView = findViewById(R.id.btn_test_view);
 		mBtnTianGeView = findViewById(R.id.btn_tiange_view);
 		mBtnMingRiView = findViewById(R.id.btn_mingri_view);
+		mBtnContact = findViewById(R.id.btn_contact);
+		mBtnMessage = findViewById(R.id.btn_get_message);
 		setListeners();
 	}
 
@@ -40,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 		mBtnTestView.setOnClickListener(onClick);
 		mBtnTianGeView.setOnClickListener(onClick);
 		mBtnMingRiView.setOnClickListener(onClick);
+		mBtnContact.setOnClickListener(onClick);
+		mBtnMessage.setOnClickListener(onClick);
 	}
 
 	//实现接听器接口
@@ -58,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
 
 				case R.id.btn_mingri_view:
 					intent = new Intent(MainActivity.this, PhoneActivity.class);
+					break;
+
+				case R.id.btn_contact:
+					intent = new Intent(MainActivity.this, ContactActivity.class);
+					break;
+
+				case R.id.btn_get_message:
+					intent = new Intent(MainActivity.this, MessageActivity.class);
 					break;
 
 					default:
