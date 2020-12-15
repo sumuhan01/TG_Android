@@ -12,6 +12,7 @@ import com.emg.tiange.GridView.GridViewActivity;
 import com.emg.tiange.HLink.Phone.ContactActivity;
 import com.emg.tiange.HanlerView.HanlerViewActivity1;
 import com.emg.tiange.ListView.ListViewActivity;
+import com.emg.tiange.LocalMusic.LocalMusicActivity;
 import com.emg.tiange.Message.MessageActivity;
 import com.emg.tiange.MingRi.PhoneActivity;
 import com.emg.tiange.NetworkCom.NetworkActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 	private Button mBtnMingRiView;
 	private Button mBtnContact;
 	private Button mBtnMessage;
+	private Button mBtnLocalMusic;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 		mBtnMingRiView = findViewById(R.id.btn_mingri_view);
 		mBtnContact = findViewById(R.id.btn_contact);
 		mBtnMessage = findViewById(R.id.btn_get_message);
+		mBtnLocalMusic = findViewById(R.id.btn_local_music);
 		setListeners();
 	}
 
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 		mBtnMingRiView.setOnClickListener(onClick);
 		mBtnContact.setOnClickListener(onClick);
 		mBtnMessage.setOnClickListener(onClick);
+		mBtnLocalMusic.setOnClickListener(onClick);
 	}
 
 	//实现接听器接口
@@ -76,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
 					intent = new Intent(MainActivity.this, MessageActivity.class);
 					break;
 
+				case R.id.btn_local_music:
+					intent = new Intent(MainActivity.this, LocalMusicActivity.class);
+					break;
 					default:
 						break;
 			}

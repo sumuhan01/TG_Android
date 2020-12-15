@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background = "#33FFC0CB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/music_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/music_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让泪化作相思雨"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/music_num"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南拳"
+            android:textSize="14sp"
+            android:layout_below="@id/music_song"
+            android:layout_alignLeft="@id/music_song"
+            android:layout_marginTop="10dp"
+            android:textColor="#888"/>
+
+        <TextView
+            android:id="@+id/music_line"
+            android:layout_width="2dp"
+            android:layout_height="18dp"
+            android:background="#888"
+            android:layout_toRightOf="@id/music_singer"
+            android:layout_alignTop="@id/music_singer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/music_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北河"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/music_line"
+            android:layout_alignTop="@id/music_line"/>
+
+        <TextView
+            android:id="@+id/music_durtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:20"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/music_singer"/>
+
+    </RelativeLayout>>
+
+</RelativeLayout>
